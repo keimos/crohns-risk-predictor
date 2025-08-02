@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler
 
 def load_and_preprocess_data(path="data/synthetic_data.csv"):
     # Load the dataset
-    df = pd.read_csv(file_path)
+    df = pd.read_csv(path)
     
     # Feature & Target
     X = df.drop(columns=['risk_label'])
